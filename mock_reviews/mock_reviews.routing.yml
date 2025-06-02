@@ -1,0 +1,8 @@
+mock_reviews.get:
+  path: '/mock-reviews'
+  defaults:
+    _controller: '\Drupal\mock_reviews\Controller\MockReviewsController::getReviews'
+    _title: 'Mock Reviews'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]

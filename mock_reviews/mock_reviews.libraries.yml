@@ -1,0 +1,9 @@
+reviews:
+  version: 1.0
+  css:
+    theme:
+      css/reviews.css: {}
+      https://unpkg.com/swiper@8/swiper-bundle.min.css: { type: external, minified: true }
+  js:
+    https://unpkg.com/swiper@8/swiper-bundle.min.js: { type: external, minified: true }
+    js/reviews-carousel.js: {}

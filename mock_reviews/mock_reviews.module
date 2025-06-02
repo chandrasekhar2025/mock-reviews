@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for the Mock Reviews module.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function mock_reviews_theme() {
+  return [
+    'mock_reviews_block' => [
+      'variables' => [
+        'reviews' => [],
+        'config' => [],
+      ],
+      'template' => 'mock-reviews-block',
+    ],
+  ];
+}

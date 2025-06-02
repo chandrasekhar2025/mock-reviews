@@ -1,0 +1,125 @@
+.mock-reviews-block {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mock-reviews-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.mock-reviews-carousel {
+  padding: 20px 40px;
+}
+
+.mock-review {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: auto;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.mock-review:hover {
+  transform: translateY(-5px);
+}
+
+.mock-review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.mock-review-user {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mock-review-rating {
+  color: #ffb400;
+  font-size: 18px;
+}
+
+.mock-review-title {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mock-review-content {
+  margin: 0 0 15px 0;
+  color: #666;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.mock-review-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999;
+  margin-top: 15px;
+}
+
+.mock-review-verified {
+  color: #00b67a;
+  font-weight: bold;
+}
+
+/* Swiper overrides */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00b67a;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  background: #00b67a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mock-reviews-carousel {
+    padding: 20px 30px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+.mock-reviews-list {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping to the next row on smaller screens */
+  gap: 20px; /* spacing between reviews */
+}
+
+.mock-review {
+  flex: 1 1 30%; /* Grow, shrink, and base width */
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}

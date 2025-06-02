@@ -1,0 +1,5 @@
+name: Mock Reviews
+description: Provides mock Trustpilot-style reviews in JSON format
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom

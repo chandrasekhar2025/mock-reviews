@@ -1,0 +1,34 @@
+<div class="mock-reviews-block">
+  <h3 class="mock-reviews-title">{{ 'Customer Reviews'|t }}</h3>
+  
+  <div class="mock-reviews-list">
+    {% for review in reviews.reviews %}
+      <div class="mock-review">
+        <div class="mock-review-header">
+          <span class="mock-review-user">{{ review.user }}</span>
+          
+          {% if config.show_rating %}
+            <div class="mock-review-rating">
+              {% for i in 1..5 %}
+                <span class="star {{ i <= review.rating ? 'filled' : '' }}">★</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        
+        <h4 class="mock-review-title">{{ review.title }}</h4>
+        <p class="mock-review-content">{{ review.content }}</p>
+        
+        <div class="mock-review-footer">
+          {% if config.show_date %}
+            <span class="mock-review-date">{{ review.date|date('F j, Y') }}</span>
+          {% endif %}
+          
+          {% if config.show_verified and review.verified %}
+            <span class="mock-review-verified">{{ 'Verified'|t }}</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
